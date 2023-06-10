@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        tools:context=".ServirActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/fondo_listas">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cliente:"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtNombreClienteSales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre cliente:"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Factura:"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtNumFac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Num fac:"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"> </TextView>
+
+            <TextView
+                android:id="@+id/txtFechaSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="24sp">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/fondo_listas">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerLines"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/fondo_listas"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtPagado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Pendiente de pago:">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnCobrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/fondo_botones"
+                    android:text="COBRAR"
+                    android:gravity="center"
+                    android:layout_margin="20dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtSubTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Subtotal:"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtIva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iva:"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:textSize="24sp">
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

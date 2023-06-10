@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/btnClientes"
+            android:src="@drawable/ic_clientecolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clientes"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clientes"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:src="@drawable/ic_invoices"
+            android:id="@+id/btnFacturas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facturas"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facturas"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:src="@drawable/ic_carretilla"
+            android:id="@+id/btnProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Productos"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Productos"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+</layout>

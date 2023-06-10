@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MercaPlus</string>
+    <string name="insert_age">Inserta tu edad</string>
+    <string name="send">Enviar</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <shape android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@android:color/white"/>
+
+    <corners android:radius="5dp"/>
+
+    <stroke android:color="#2A2330" android:width="2dp"/>
+
+</shape>
